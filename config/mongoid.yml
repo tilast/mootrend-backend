@@ -1,0 +1,6 @@
+development:
+  sessions:
+    default:
+      database: mootrend
+      hosts:
+        - localhost:27017
