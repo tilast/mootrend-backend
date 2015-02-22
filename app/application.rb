@@ -18,6 +18,10 @@ set :root,     File.expand_path(File.join(File.dirname(__FILE__), '../'))
   Dir[File.join(settings.root, "app/#{folder}/*.rb")].sort.each { |f| require f }
 end
 
+configure do
+  disable :cross_origin
+end
+
 # For documentation purposes as well
 before do
   content_type :json

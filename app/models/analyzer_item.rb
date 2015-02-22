@@ -1,8 +1,7 @@
 class AnalyzerItem
   include Mongoid::Document
 
-  field :trend, type: String
-  field :tweets_urls, type: Array
+  field :state,  type: String
   field :analys, type: String
-  field :date, type: DateTime, default: Time.now
+  field :date,   type: DateTime, default: Time.now
 end
